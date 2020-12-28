@@ -1,6 +1,8 @@
 # If a function with default values has multiple clauses, it is required to create a function head (without an actual body) for declaring defaults
 
 defmodule Concat do
+    # A function head declaring defaults
+    # (This is required when we have multiple function with same name)
     def join(a, b \\ nil, sep \\ " ")
 
     def join(a, b, _sep) when is_nil(b) do
