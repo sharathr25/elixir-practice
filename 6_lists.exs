@@ -11,7 +11,7 @@ IO.inspect list ++ [4,5,6]
 
 IO.inspect list -- [1]
 
-head = hd list # hd [] i.e when we try to head of empty list error will be thrown
+head = hd list # hd [] i.e when we try to read head of empty list error will be thrown
 tail = tl list
 
 IO.puts head
