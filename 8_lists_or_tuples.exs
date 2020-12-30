@@ -4,13 +4,16 @@
 
 # Similarly, the performance of list concatenation depends on the length of the left-hand list
 
+# lists are dynamic size
+# tupels are fixed size
+ 
 list = [1, 2, 3]
 
 # This is fast as we only need to traverse `[0]` to prepend to `list`
 IO.inspect [0] ++ list
 
 # This is slow as we need to traverse `list` to append 4
-IO.inspect list ++ [4]
+IO.inspect list ++ [ 4]
 
 # Tuples, on the other hand, are stored contiguously in memory. 
 # This means getting the tuple size or accessing an element by index is fast. 

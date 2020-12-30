@@ -17,3 +17,6 @@ IO.puts string_var
 IO.inspect list_var
 IO.inspect tuple_var
 IO.inspect map_var
+
+# when we are dealing with large number we can use underscore
+IO.puts 1_000_000_000

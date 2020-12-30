@@ -14,3 +14,5 @@ IO.puts is_binary str1 #true, because Strings in Elixir are represented internal
 IO.puts String.upcase str1
 IO.puts String.downcase str1
 
+# If we need to have a double quotes in strings we can the follwing
+IO.puts ~s("Hello world!")
