@@ -39,3 +39,7 @@ odd_multiples_of_3 = 1..100_000
     |> Stream.map(&(&1*3))
     |> Enum.to_list # after performing stream operation we get stream,So we need to convert it to list
 IO.inspect odd_multiples_of_3
+
+# get from list using index
+# Enum.at(list, index)
+IO.puts Enum.at(odd_multiples_of_3,10)
